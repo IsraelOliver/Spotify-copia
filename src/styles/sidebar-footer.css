@@ -1,0 +1,227 @@
+body {
+    background: #000;
+    font-family: var(--font-dm-sans);
+    display: grid;
+    grid-template-areas: 
+        "sidebar main main"
+        "footer footer footer";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 8px;
+    padding: 8px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    width: 420px;
+    background-color: #000000;
+}
+
+.sidebar__navigation {
+    background-color: #121212;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.sidebar__navigation .logo {
+    background: #121212;
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.logo img{
+    width: 80px;
+}
+
+.sidebar nav ul {
+    margin-top: 20px;
+    padding: 0 20px 10px;
+}
+
+.sidebar nav ul li {
+    padding: 10px 0;
+}
+
+.sidebar nav ul li a {
+    color: #b3b3b3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.library {
+    background: #121212;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px 8px 20px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.library .library__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library__button {
+    display: flex;
+    margin-right: 10px;
+    color: #b3b3b3;
+    background: transparent;
+    border: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    padding: 20px 10px;
+}
+
+.library .library__button .fa {
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: 300;
+    padding-right: 8px;
+}
+
+.library .library__content .fa-plus {
+    margin: 24px 10px;
+}
+
+.section-lib {
+    display: flex;
+    background: #242424;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    color: #b3b3b3;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0;
+    padding: 16px 20px;
+    border-radius: 8px;
+}
+
+.section-lib .section-lib__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-lib .text {
+    padding-bottom: 14px;
+    color: #fff;
+}
+
+.section-lib .title {
+    font-weight: 600;
+}
+
+.section-lib .subtitle {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.section-lib__content .section-lib__button {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    border-radius: 20px;
+    font-size: 12px;
+    border: none;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: none;
+    padding: 10px;
+    margin-top: 12px;
+}
+
+.button-playlist {
+    width: 120px;
+}
+
+.button-podcast {
+    width: 150px;
+}
+
+.sidebar .cookies {
+    margin: 100px 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidebar .cookies a {
+    color: #b3b3b3;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: none;
+    transition: .2s;
+    padding: 10px 7px 0 0;
+}
+
+.sidebar .cookies a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.sidebar .lenguages__button {
+    background-color: transparent;
+    border: 1px solid #878787;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    align-items: center;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background: linear-gradient(to right, #ae2896, #509bf5);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    flex-direction: column;
+    color: #fff;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.footer-subtitle {
+    font-weight: 400;
+}
+
+.footer .inscricao__button {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    color: #000;
+    border-radius: 30px;
+    font-size: 15px;
+    border: none;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: none;
+    cursor: pointer;
+}
+
+.footer .inscricao__button span {
+    margin: 15px 30px;
+}
